@@ -1,11 +1,135 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to SinkLabs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SinkLabs - Logic In Motion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a192f;
+      color: #ccd6f6;
+    }
+    header {
+      background: #112240;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #64ffda;
+    }
+    header span {
+      font-size: 1rem;
+      color: #8892b0;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: #ccd6f6;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #64ffda;
+    }
+    .software-list {
+      margin-top: 1rem;
+      border-left: 4px solid #64ffda;
+      padding-left: 1rem;
+    }
+    .software-list li {
+      margin: 0.7rem 0;
+    }
+    .coming-soon {
+      color: #8892b0;
+      font-size: 0.9rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      background: #112240;
+      color: #ccd6f6;
+      border: 1px solid #233554;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+    }
+    button {
+      background: #64ffda;
+      color: #0a192f;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #8892b0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from SinkLabs!</h1>
-  <p>This is a test website deployed with Cloudflare Pages.</p>
+
+  <header>
+    <div>
+      <h1>SinkLabs</h1>
+      <span>Logic In Motion</span>
+    </div>
+    <nav>
+      <a href="#free">Free</a>
+      <a href="#paid">Paid</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <p>Welcome to SinkLabs, where innovation meets purpose. We build futuristic, custom-made software to simplify your workflow and amplify productivity.</p>
+  </section>
+
+  <section id="free">
+    <h2>Free Software <span class="coming-soon">(Coming Soon)</span></h2>
+    <ul class="software-list">
+      <li>🔹 Google Colab-based code to extract files to Google Drive</li>
+      <li>🔹 Simple Inventory System</li>
+    </ul>
+  </section>
+
+  <section id="paid">
+    <h2>Paid / Subscription Software <span class="coming-soon">(Coming Soon)</span></h2>
+    <ul class="software-list">
+      <li>🔹 Alternative to Otter AI (Speech-to-Text and Summarization)</li>
+      <li>🔹 Summarize Google Drive videos</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out via the form below or email us at <a href="mailto:hello@sinklabs.dev" style="color:#64ffda">hello@sinklabs.dev</a>.</p>
+    <form action="mailto:hello@sinklabs.dev" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 SinkLabs. All rights reserved.
+  </footer>
+
 </body>
 </html>
