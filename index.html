@@ -4,14 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Free, easy-to-use inventory management system by SinkLabs. Cloud-based, barcode support, product images.">
-<meta name="keywords" content="free inventory system, google drive inventory, retail shop software, barcode inventory, SinkLabs">
-<meta name="author" content="SinkLabs">
-<meta property="og:title" content="SinkLabs Inventory System" />
-<meta property="og:description" content="Free and easy inventory system for retail shops with barcode and image support." />
-<meta property="og:image" content="https://yourdomain.com/logo.png" /> <!-- if you have a logo -->
-<meta property="og:url" content="https://yourdomain.com" />
-<meta name="twitter:card" content="summary_large_image" />
-
+  <meta name="keywords" content="free inventory system, google drive inventory, retail shop software, barcode inventory, SinkLabs">
+  <meta name="author" content="SinkLabs">
+  <meta property="og:title" content="SinkLabs - Logic In Motion" />
+  <meta property="og:description" content="Free and easy inventory system for retail shops with barcode and image support." />
+  <meta property="og:image" content="https://www.sinklabs.dev/logo.png" />
+  <meta property="og:url" content="https://www.sinklabs.dev" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>SinkLabs - Logic In Motion</title>
   <style>
     body {
@@ -49,17 +48,21 @@
     h2 {
       color: #64ffda;
     }
-    .software-list {
-      margin-top: 1rem;
+    .feature-list {
       border-left: 4px solid #64ffda;
       padding-left: 1rem;
+      margin-top: 1rem;
     }
-    .software-list li {
+    .feature-list li {
       margin: 0.7rem 0;
     }
-    .coming-soon {
+    .contact {
+      margin-top: 2rem;
       color: #8892b0;
-      font-size: 0.9rem;
+    }
+    .contact a {
+      color: #64ffda;
+      text-decoration: none;
     }
     form {
       display: flex;
@@ -111,27 +114,34 @@
 
   <section id="free">
     <h2>Free Software</h2>
-    <ul class="software-list">
-      <li>🔹 <a href="ims_b.html" style="color:#64ffda">Inventory Management System</a></li>
+    <ul class="feature-list">
+      <li>🔹 <a href="ims_b.html" style="color:#64ffda">Inventory Management System</a> — Cloud-based, barcode support, image upload, Google Drive compatible.<br>💬 <i>If you require support or custom amendments, feel free to contact us.</i></li>
       <li>🔹 Google Colab-based code to extract files to Google Drive</li>
     </ul>
   </section>
 
   <section id="paid">
-    <h2>Paid / Subscription Software <span class="coming-soon">(Coming Soon)</span></h2>
-    <ul class="software-list">
-      <li>🔹 Alternative to Otter AI (Speech-to-Text and Summarization)</li>
-      <li>🔹 Summarize Google Drive videos</li>
+    <h2>Paid / Subscription Software <span style="color:#8892b0; font-size: 0.9rem;">(Coming Soon)</span></h2>
+    <ul class="feature-list">
+      <li>🔹 Otter.ai Alternative — Advanced Speech-to-Text + Summarization</li>
+      <li>🔹 Summarize videos stored in Google Drive</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Feel free to reach out via the form below or email us at <a href="mailto:hello@sinklabs.dev" style="color:#64ffda">hello@sinklabs.dev</a>.</p>
-    <form action="mailto:hello@sinklabs.dev" method="POST" enctype="text/plain">
+    <p>Need help or want a customized solution for your workflow?</p>
+    <p>📩 Email us at <a href="mailto:hello@sinklabs.dev">hello@sinklabs.dev</a></p>
+    <form action="https://formsubmit.co/hello@sinklabs.dev" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <!-- Honeypot to reduce spam -->
+      <input type="text" name="_honey" style="display:none" />
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="https://www.sinklabs.dev/thank-you.html" />
+      <!-- Disable CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false" />
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -142,4 +152,3 @@
 
 </body>
 </html>
-
