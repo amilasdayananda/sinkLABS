@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SinkLabs Inventory</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SinkLabs Inventory System</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #e8f4fd;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4faff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #e6f4ff;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #cce0ff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #007acc;
+    }
+    section {
       padding: 2rem;
-      max-width: 800px;
+    }
+    h2 {
+      color: #005fa3;
+    }
+    p {
+      max-width: 600px;
       margin: auto;
+      line-height: 1.6;
     }
-    h1 {
-      color: #187bcd;
-    }
-    a.download {
+    .download-btn {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      margin-top: 1rem;
-      background-color: #187bcd;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #007acc;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s;
     }
-    .code-block {
-      background: #f4f4f4;
+    .download-btn:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      margin-top: 3rem;
       padding: 1rem;
-      border-left: 4px solid #187bcd;
-      font-family: monospace;
-      white-space: pre-wrap;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>SinkLabs Inventory Management (v1)</h1>
-  <p>
-    This is a simple, free inventory system for retail shops that works with Google Drive and Google Sheets. It offers:
-  </p>
-  <ul>
-    <li>Web-based interface</li>
-    <li>Barcode field & image support</li>
-    <li>Works entirely on Google Drive (via Apps Script)</li>
-    <li>Easy to set up and free to use</li>
-  </ul>
 
-  <h2>🔽 Download</h2>
-  <a class="download" href="https://sinklabs.github.io/inventory/SinkLabsInventory.zip" download>Download ZIP</a>
+  <header>
+    <h1>SinkLabs Inventory System</h1>
+    <p>Simple. Free. Google Drive-Based.</p>
+  </header>
 
-  <h2>⚙️ Setup Instructions</h2>
-  <ol>
-    <li>Go to <a href="https://script.google.com" target="_blank">Google Apps Script</a> and create a new project</li>
-    <li>Copy code from <code>Code.gs</code> and <code>Index.html</code> into your project</li>
-    <li>Create a Google Sheet with this header row:</li>
-  </ol>
-  <div class="code-block">
-Timestamp | Product Name | Category | Price | Quantity | Barcode | Image URL
-  </div>
-  <ol start="4">
-    <li>Deploy as Web App: <strong>Execute as: Me</strong>, <strong>Access: Anyone</strong></li>
-    <li>Done! Your inventory system is now online.</li>
-  </ol>
+  <section>
+    <h2>Free Download</h2>
+    <p>
+      This inventory management system is built for small retail shops.
+      It runs on Google Drive with support for barcodes and product images.
+      Just upload the files and connect your Google Sheet.
+    </p>
+    <a class="download-btn" href="https://github.com/amilasdayananda/sinkLABS/blob/main/SinkLabsInventory.zip" target="_blank">
+      📦 Download SinkLabsInventory.zip
+    </a>
+  </section>
 
-  <h2>📧 Contact</h2>
-  <p>
-    For support or upgrades, contact <a href="mailto:hello@sinklabs.dev">hello@sinklabs.dev</a>
-  </p>
+  <footer>
+    &copy; 2025 SinkLabs | Contact: hello@sinklabs.dev
+  </footer>
+
 </body>
 </html>
