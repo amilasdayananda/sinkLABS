@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SinkLabs Inventory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f4fd;
+      color: #333;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #187bcd;
+    }
+    a.download {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      background-color: #187bcd;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .code-block {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-left: 4px solid #187bcd;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>SinkLabs Inventory Management (v1)</h1>
+  <p>
+    This is a simple, free inventory system for retail shops that works with Google Drive and Google Sheets. It offers:
+  </p>
+  <ul>
+    <li>Web-based interface</li>
+    <li>Barcode field & image support</li>
+    <li>Works entirely on Google Drive (via Apps Script)</li>
+    <li>Easy to set up and free to use</li>
+  </ul>
+
+  <h2>🔽 Download</h2>
+  <a class="download" href="https://sinklabs.github.io/inventory/SinkLabsInventory.zip" download>Download ZIP</a>
+
+  <h2>⚙️ Setup Instructions</h2>
+  <ol>
+    <li>Go to <a href="https://script.google.com" target="_blank">Google Apps Script</a> and create a new project</li>
+    <li>Copy code from <code>Code.gs</code> and <code>Index.html</code> into your project</li>
+    <li>Create a Google Sheet with this header row:</li>
+  </ol>
+  <div class="code-block">
+Timestamp | Product Name | Category | Price | Quantity | Barcode | Image URL
+  </div>
+  <ol start="4">
+    <li>Deploy as Web App: <strong>Execute as: Me</strong>, <strong>Access: Anyone</strong></li>
+    <li>Done! Your inventory system is now online.</li>
+  </ol>
+
+  <h2>📧 Contact</h2>
+  <p>
+    For support or upgrades, contact <a href="mailto:hello@sinklabs.dev">hello@sinklabs.dev</a>
+  </p>
+</body>
+</html>
